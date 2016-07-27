@@ -46,13 +46,23 @@ This instantiates a `TraverseRetargeting` object. Call it when:
   2. You want to [exclude someone from a campaign](#exclusion).
   3. Someone [converts](#conversion).
 
+For example:
+```javascript
+<script src="https://static.traversedlp.com/v1/container/traverse-container.js?clientId=YOUR-CLIENT-ID-HERE" type="text/javascript"></script>
+<script type="text/javascript">
+TraverseRetargeting.include({
+  campaignId: "YOUR-CAMPAIGN-ID-HERE"
+});
+</script>
+```
+
 ### Inclusion
 
 To include a user in a campaign, use the `include` method:
 
 ```javascript
 TraverseRetargeting.include({
-  campaignId: YOUR-CAMPAIGN-ID-HERE
+  campaignId: "YOUR-CAMPAIGN-ID-HERE"
 });
 ```
 
@@ -62,7 +72,7 @@ To exclude a user from your campaigns, use the `exclude` method:
 
 ```javascript
 TraverseRetargeting.exclude({
-  blacklistId: YOUR-EXCLUSION-LIST-ID-HERE
+  blacklistId: "YOUR-EXCLUSION-LIST-ID-HERE"
 });
 ```
 
@@ -72,7 +82,7 @@ To report a conversion, use the `conversion` method:
 
 ```javascript
 TraverseRetargeting.conversion({
-  campaignId: YOUR-CAMPAIGN-ID-HERE
+  campaignId: "YOUR-CAMPAIGN-ID-HERE"
 });
 ```
 
