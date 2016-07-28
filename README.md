@@ -23,7 +23,7 @@ To get started with Traverse Email Retargeting:
 
 ## Creating a campaign
 
-To set up a campaign, please <a href="mailto:Traverse Operations <operations@traversedlp.com&gt">email us</a>:
+To set up a campaign, please send us:
 
   1. Your creative.
   2. Your exclusion list of (hashed) email addresses, if any.
@@ -33,7 +33,7 @@ We will then provide you:
   1. A campaign ID.
   2. An exclusion-list ID.
 
-*Note:* We will release a UI after MVP.
+*Note:* We will release a UI and our internal API after MVP.
 
 ## Deploying our tag
 
