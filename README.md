@@ -33,6 +33,8 @@ We will then provide you:
   1. A campaign ID.
   2. An exclusion-list ID.
 
+*Note:* We will release a UI after MVP.
+
 ## Deploying our tag
 
 You can load our tag from the following URL:
@@ -47,7 +49,7 @@ This instantiates a `TraverseRetargeting` object. Call it when:
   3. Someone [converts](#conversion).
 
 For example:
-```javascript
+```html
 <script src="https://static.traversedlp.com/v1/container/traverse-container.js?clientId=YOUR-CLIENT-ID-HERE" type="text/javascript"></script>
 <script type="text/javascript">
 TraverseRetargeting.include({
@@ -69,7 +71,6 @@ TraverseRetargeting.include({
 ### Exclusion
 
 To exclude a user from your campaigns, use the `exclude` method:
-
 ```javascript
 TraverseRetargeting.exclude({
   blacklistId: "YOUR-EXCLUSION-LIST-ID-HERE"
@@ -79,11 +80,8 @@ TraverseRetargeting.exclude({
 ### Conversion
 
 To report a conversion, use the `conversion` method:
-
 ```javascript
 TraverseRetargeting.conversion({
-  campaignId: "YOUR-CAMPAIGN-ID-HERE"
+  campaignId: "YOUR-CAMPAIGN-ID-HERE",
 });
 ```
-
-*Note:* This is just a helpful metric. We pay on clicks, not conversions.
