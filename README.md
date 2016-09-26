@@ -12,7 +12,7 @@
 
 ## Overview
 
-Traverse Email Retargeting allows you to send email advertisements to your anonymous website visitors.
+Traverse Email Retargeting allows you to send email advertisements to anonymous website visitors.
 
 ## Getting started
 
