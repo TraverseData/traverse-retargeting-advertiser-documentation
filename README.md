@@ -99,14 +99,18 @@ To report a conversion, pass the `conversion` method an object with the followin
 | `emailMd5Lower` | MD5 hash of trimmed, lowercased email address | No |
 | `emailSha1Lower` | SHA-1 hash of trimmed, lowercased email address | No |
 
-*Note:* (Hashed) email addresses are optional, but will enable more-detailed reporting.
+Notes:
+
+ 1. At minimum, please report the `"click"` goal.
+ 2. (Hashed) email addresses are optional, but will enable more-detailed reporting.
+  
 
 For example:
 
 ```javascript
 TraverseRetargeting.conversion({
   campaignId: "YOUR-CAMPAIGN-ID-HERE",
-  goal: "purchase",
+  goal: "click",
   emailMd5Lower: "ba9d46a037766855efca2730031bfc5db095c654"
 });
 ```
