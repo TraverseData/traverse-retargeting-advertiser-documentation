@@ -41,7 +41,7 @@ You can load our tag from the following URL:
 https://static.traversedlp.com/v1/retargeting.js
 ```
 
-This instantiates a `TraverseRetargeting` object. Call it when:
+This instantiates a `TraverseRetargeting` singleton. Call it when:
 
   1. You want to [include someone in a campaign](#inclusion).
   2. You want to [exclude someone from a campaign](#exclusion).
@@ -71,5 +71,36 @@ To include a user in a campaign, use the `include` method:
 ```javascript
 TraverseRetargeting.include({
   campaignId: "YOUR-CAMPAIGN-ID-HERE"
+});
+```
+
+### Exclusion
+
+To exclude a user from campaigns, add them to an exclusion list:
+
+```javascript
+TraverseRetargeting.exclude({
+  exclusionListId: "YOUR-EXCLUSION-LIST-ID-HERE"
+});
+```
+
+### Conversion
+
+To report a conversion, pass the `conversion` method an object with the following properties:
+
+| Property | Description | Required |
+| -------- | ----------- | -------- |
+| `campaignId` | Campaign ID | Yes |
+| `emailMd5Lower` | MD5 hash of trimmed, lowercased email address | No |
+| `emailSha1Lower` | SHA-1 hash of trimmed, lowercased email address | No |
+
+*Note:* The hashes are optional, but will enable more detailed reporting.
+
+For example:
+
+```javascript
+TraverseRetargeting.conversion({
+  campaignId: "YOUR-CAMPAIGN-ID-HERE",
+  emailMd5Lower: "ba9d46a037766855efca2730031bfc5db095c654"
 });
 ```
