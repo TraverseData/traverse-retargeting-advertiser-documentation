@@ -106,6 +106,7 @@ For example:
 ```javascript
 TraverseRetargeting.conversion({
   campaignId: "YOUR-CAMPAIGN-ID-HERE",
+  goal: "purchase",
   emailMd5Lower: "ba9d46a037766855efca2730031bfc5db095c654"
 });
 ```
