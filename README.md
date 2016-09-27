@@ -8,6 +8,8 @@
   4. [Deploying our tag](#deploying-our-tag)
     1. [Initialization](#initialization)
     2. [Inclusion](#inclusion)
+    3. [Exclusion](#exclusion)
+    4. [Conversion](#exclusion)
 
 ## Overview
 
