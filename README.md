@@ -94,10 +94,10 @@ To report a conversion, pass the `conversion` method an object with the followin
 | Property | Description | Required |
 | -------- | ----------- | -------- |
 | `campaignId` | Campaign ID | Yes |
-| `goal` | Conversion goal (*e.g.* `"register"`, `"subscribe"`, `"purchase"`) | No |
 | `email` | Email address | No |
 | `emailMd5Lower` | MD5 hash of trimmed, lowercased email address | No |
 | `emailSha1Lower` | SHA-1 hash of trimmed, lowercased email address | No |
+| `goal` | Conversion goal (*e.g.* `"register"`, `"subscribe"`, `"purchase"`) | No |
 
 *Note:* Conversion goals and (hashed) email addresses are optional, but enable more-detailed reporting.
 
