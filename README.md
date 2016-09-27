@@ -25,7 +25,7 @@ To get started with Traverse Email Retargeting:
 
 Clients cannot currently manage campaigns and exclusion lists programmatically.
 
-In the meantime, we will provide you:
+In the meantime, please reach out and we will provide you:
 
   1. A campaign ID.
   2. An exclusion-list ID.
