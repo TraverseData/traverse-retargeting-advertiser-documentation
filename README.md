@@ -42,11 +42,11 @@ You can load our tag from the following URL:
 https://static.traversedlp.com/v1/retargeting.js
 ```
 
-This instantiates a `TraverseRetargeting` singleton. Call it when:
+This instantiates a `TraverseRetargeting` singleton. You can use it to:
 
-  1. You want to [include someone in a campaign](#inclusion).
-  2. You want to [exclude someone from a campaign](#exclusion).
-  3. Someone [converts](#conversion).
+  1. [Include someone in a campaign](#inclusion).
+  2. [Exclude someone from campaigns](#exclusion).
+  3. [Track conversions](#conversion).
 
 For example:
 ```html
