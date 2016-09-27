@@ -89,8 +89,6 @@ TraverseRetargeting.exclude({
 
 ### Conversion
 
-Users who convert will automatically be excluded from the campaign.
-
 To report a conversion, pass the `conversion` method an object with the following properties:
 
 | Property | Description | Required |
@@ -101,7 +99,10 @@ To report a conversion, pass the `conversion` method an object with the followin
 | `emailSha1Lower` | SHA-1 hash of trimmed, lowercased email address | No |
 | `goal` | Conversion goal (*e.g.* `"register"`, `"subscribe"`, `"purchase"`, *etc.*) | No |
 
-*Note:* Conversion goals and (hashed) email addresses are optional, but enable more-detailed reporting.
+Notes:
+
+ 1. Conversion goals and (hashed) email addresses are optional, but enable more-detailed reporting.
+ 2. Users who convert will automatically be excluded from all future email for this campaign.
 
 For example:
 
