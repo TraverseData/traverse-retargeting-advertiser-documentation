@@ -94,23 +94,19 @@ To report a conversion, pass the `conversion` method an object with the followin
 | Property | Description | Required |
 | -------- | ----------- | -------- |
 | `campaignId` | Campaign ID | Yes |
-| `goal` | Goal name (*e.g.* `"click"`, `"purchase"`, `"signup"`, *etc.*) | Yes |
+| `goal` | Conversion goal (*e.g.* `"register"`, `"subscribe"`, `"purchase"`) | No |
 | `email` | Email address | No |
 | `emailMd5Lower` | MD5 hash of trimmed, lowercased email address | No |
 | `emailSha1Lower` | SHA-1 hash of trimmed, lowercased email address | No |
 
-Notes:
-
- 1. At minimum, please report the `"click"` goal.
- 2. (Hashed) email addresses are optional, but will enable more-detailed reporting.
-  
+*Note:* Conversion goals and (hashed) email addresses are optional, but enable more-detailed reporting.
 
 For example:
 
 ```javascript
 TraverseRetargeting.conversion({
   campaignId: "YOUR-CAMPAIGN-ID-HERE",
-  goal: "click",
+  goal: "purchase",
   emailMd5Lower: "ba9d46a037766855efca2730031bfc5db095c654"
 });
 ```
