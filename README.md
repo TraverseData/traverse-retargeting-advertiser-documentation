@@ -55,7 +55,7 @@ For example:
 
 ### Initialization
 
-Before using the `TraverseRetargetingObject`, it must be initialized with your client ID.
+Before using the `TraverseRetargeting` singleton, it must be initialized with your client ID.
 
 For example:
 
