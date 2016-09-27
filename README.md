@@ -94,7 +94,7 @@ To report a conversion, pass the `conversion` method an object with the followin
 | Property | Description | Required |
 | -------- | ----------- | -------- |
 | `campaignId` | Campaign ID | Yes |
-| `goal` | Goal name (*e.g.* `"purchase"`, `"signup"`, *etc.*) | Yes |
+| `goal` | Goal name (*e.g.* `"click"`, `"purchase"`, `"signup"`, *etc.*) | Yes |
 | `email` | Email address | No |
 | `emailMd5Lower` | MD5 hash of trimmed, lowercased email address | No |
 | `emailSha1Lower` | SHA-1 hash of trimmed, lowercased email address | No |
