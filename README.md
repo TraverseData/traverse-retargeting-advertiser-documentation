@@ -44,8 +44,8 @@ https://static.traversedlp.com/v1/retargeting.js
 
 This instantiates a `TraverseRetargeting` singleton. You can use it to:
 
-  1. [Include someone in a campaign](#inclusion).
-  2. [Exclude someone from campaigns](#exclusion).
+  1. [Include a user in a campaign](#inclusion).
+  2. [Exclude a user from campaigns](#exclusion).
   3. [Track conversions](#conversion).
 
 For example:
