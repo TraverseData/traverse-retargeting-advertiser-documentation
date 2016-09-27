@@ -17,22 +17,18 @@ Traverse Email Retargeting allows you to send email advertisements to anonymous 
 
 To get started with Traverse Email Retargeting:
 
+ 1. [Create an exclusion list](#creating-an-exclusion-list).
  1. [Create a campaign](#creating-a-campaign).
  2. [Deploy our tag](#deploying-our-tag).
 
 ## Creating a campaign
 
-To set up a campaign, please send us:
+Clients cannot currently manage campaigns and exclusion lists programmatically.
 
-  1. Your creative.
-  2. Your exclusion list of (hashed) email addresses, if any.
-
-We will then provide you:
+In the meantime, we will provide you:
 
   1. A campaign ID.
   2. An exclusion-list ID.
-
-*Note:* We will release a UI and our internal API after MVP.
 
 ## Deploying our tag
 
