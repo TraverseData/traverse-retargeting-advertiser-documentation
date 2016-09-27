@@ -6,9 +6,8 @@
   2. [Getting started](#getting-started)
   3. [Creating a campaign](#creating-a-campaign)
   4. [Deploying our tag](#deploying-our-tag)
-    1. [Inclusion](#inclusion)
-    2. [Exclusion](#exclusion)
-    3. [Conversion](#conversion)
+    1. [Initialization](#initialization)
+    2. [Inclusion](#inclusion)
 
 ## Overview
 
@@ -39,7 +38,7 @@ We will then provide you:
 
 You can load our tag from the following URL:
 ```
-http(s)://static.traversedlp.com/v1/retargeting.js?clientId={clientId}
+https://static.traversedlp.com/v1/retargeting.js
 ```
 
 This instantiates a `TraverseRetargeting` object. Call it when:
@@ -50,12 +49,19 @@ This instantiates a `TraverseRetargeting` object. Call it when:
 
 For example:
 ```html
-<script src="https://static.traversedlp.com/v1/container/traverse-container.js?clientId=YOUR-CLIENT-ID-HERE" type="text/javascript"></script>
-<script type="text/javascript">
-TraverseRetargeting.include({
-  campaignId: "YOUR-CAMPAIGN-ID-HERE"
+<script src="https://static.traversedlp.com/v1/container/traverse-container.js" type="text/javascript"></script>
+```
+
+### Initialization
+
+Before using the `TraverseRetargetingObject`, it must be initialized with your client ID.
+
+For example:
+
+```javascript
+TraverseRetargeting.init({
+  clientId: "YOUR-CLIENT-ID-HERE"
 });
-</script>
 ```
 
 ### Inclusion
@@ -65,23 +71,5 @@ To include a user in a campaign, use the `include` method:
 ```javascript
 TraverseRetargeting.include({
   campaignId: "YOUR-CAMPAIGN-ID-HERE"
-});
-```
-
-### Exclusion
-
-To exclude a user from your campaigns, use the `exclude` method:
-```javascript
-TraverseRetargeting.exclude({
-  blacklistId: "YOUR-EXCLUSION-LIST-ID-HERE"
-});
-```
-
-### Conversion
-
-To report a conversion, use the `conversion` method:
-```javascript
-TraverseRetargeting.conversion({
-  campaignId: "YOUR-CAMPAIGN-ID-HERE",
 });
 ```
