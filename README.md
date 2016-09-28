@@ -87,7 +87,7 @@ To exclude a user from campaigns, pass the `exclude` method an object with the f
 Notes:
 
  1. (Hashed) email addresses are optional, but enable more-accurate exclusion.
- 2. Users should be excluded after converting.
+ 2. Users should typically be excluded after converting.
 
 For example:
 
