@@ -55,9 +55,7 @@ This instantiates a `TraverseRetargeting` singleton. You can use it to:
 
 ### Initialization
 
-Before using the `TraverseRetargeting` singleton, it must be initialized with your client ID.
-
-For example:
+Before using the `TraverseRetargeting` singleton, it must be initialized with your client ID:
 
 ```javascript
 TraverseRetargeting.init({
