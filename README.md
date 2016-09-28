@@ -45,7 +45,7 @@ https://static.traversedlp.com/v1/retargeting.js
 
 For example:
 ```html
-<script src="https://static.traversedlp.com/v1/container/retargeting.js" type="text/javascript"></script>
+<script src="https://static.traversedlp.com/v1/retargeting.js" type="text/javascript"></script>
 ```
 
 This instantiates a `TraverseRetargeting` singleton. You can use it to:
