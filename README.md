@@ -24,15 +24,15 @@ To get started with Traverse Email Retargeting:
 
 ## Creating an exclusion list
 
-Exclusion lists are used to specify users to exclude from campaigns.
+Exclusion lists are used to exclude users from campaigns.
 
-Clients cannot currently create exclusion lists programmatically.
+Creating exclusion lists programmatically is not yet supported.
 
 In the meantime, please <a href="mailto:Traverse Operations <operations@traversedlp.com&gt">contact us</a> and we will provide you an exclusion-list ID.
 
 ## Creating a campaign
 
-Clients cannot currently manage campaigns programmatically.
+Managing campaigns programmatically is not yet supported.
 
 In the meantime, please <a href="mailto:Traverse Operations <operations@traversedlp.com&gt">contact us</a> and we will provide you a campaign ID.
 
