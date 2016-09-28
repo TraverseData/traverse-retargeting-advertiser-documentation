@@ -32,7 +32,7 @@ In the meantime, please <a href="mailto:Traverse Operations <operations@traverse
 
 ## Creating a campaign
 
-*Managing campaigns programmatically is not yet supported.*
+*Creating campaigns programmatically is not yet supported.*
 
 In the meantime, please <a href="mailto:Traverse Operations <operations@traversedlp.com&gt">contact us</a> and we will provide you a campaign ID.
 
