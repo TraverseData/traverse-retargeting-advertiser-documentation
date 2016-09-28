@@ -29,13 +29,13 @@ Exclusion lists are used to specify users to exclude from campaigns.
 
 Clients cannot currently create exclusion lists programmatically.
 
-In the meantime, please reach out and we will provide you an exclusion-list ID.
+In the meantime, please <a href="mailto:Traverse Operations <operations@traversedlp.com&gt">contact us</a> and we will provide you an exclusion-list ID.
 
 ## Creating a campaign
 
 Clients cannot currently manage campaigns programmatically.
 
-In the meantime, please reach out and we will provide you a campaign ID.
+In the meantime, please <a href="mailto:Traverse Operations <operations@traversedlp.com&gt">contact us</a> and we will provide you a campaign ID.
 
 ## Deploying our tag
 
