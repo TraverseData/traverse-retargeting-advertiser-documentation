@@ -80,7 +80,7 @@ To exclude a user from campaigns, pass the `exclude` method an object with the f
 | Property | Description | Required |
 | -------- | ----------- | -------- |
 | `campaignId` | Campaign ID | Yes |
-| `email` | Email address (we will hash before submitting) | No |
+| `email` | Email address (*N.B.* we will hash before submitting) | No |
 | `emailMd5Lower` | MD5 hash of trimmed, lowercased email address | No |
 | `emailSha1Lower` | SHA-1 hash of trimmed, lowercased email address | No |
 
