@@ -47,7 +47,6 @@ This instantiates a `TraverseRetargeting` singleton. You can use it to:
 
   1. [Include a user in a campaign](#inclusion).
   2. [Exclude a user from campaigns](#exclusion).
-  3. [Track conversions](#conversion).
 
 For example:
 ```html
