@@ -9,7 +9,6 @@
     1. [Initialization](#initialization)
     2. [Inclusion](#inclusion)
     3. [Exclusion](#exclusion)
-    4. [Conversion](#exclusion)
 
 ## Overview
 
@@ -84,32 +83,5 @@ To exclude a user from campaigns, add them to an exclusion list:
 ```javascript
 TraverseRetargeting.exclude({
   exclusionListId: "YOUR-EXCLUSION-LIST-ID-HERE"
-});
-```
-
-### Conversion
-
-To report a conversion, pass the `conversion` method an object with the following properties:
-
-| Property | Description | Required |
-| -------- | ----------- | -------- |
-| `campaignId` | Campaign ID | Yes |
-| `email` | Email address (*N.B.* we will hash it before submitting) | No |
-| `emailMd5Lower` | MD5 hash of trimmed, lowercased email address | No |
-| `emailSha1Lower` | SHA-1 hash of trimmed, lowercased email address | No |
-| `goal` | Conversion goal (*e.g.* `"register"`, `"subscribe"`, `"purchase"`, *etc.*) | No |
-
-Notes:
-
- 1. Conversion goals and (hashed) email addresses are optional, but enable more-detailed reporting.
- 2. Users who convert will automatically be excluded from all future email for this campaign.
-
-For example:
-
-```javascript
-TraverseRetargeting.conversion({
-  campaignId: "YOUR-CAMPAIGN-ID-HERE",
-  emailMd5Lower: "ba9d46a037766855efca2730031bfc5db095c654",
-  goal: "purchase"
 });
 ```
