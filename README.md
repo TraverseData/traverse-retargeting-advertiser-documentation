@@ -73,6 +73,18 @@ TraverseRetargeting.include({
 });
 ```
 
+If you need to pass any additional data, use the `custom` property:
+
+```javascript
+TraverseRetargeting.include({
+  campaignId: "YOUR-CAMPAIGN-ID-HERE",
+  custom: {
+    impressionId: "5d2f8eb0-4757-48e7-9ea7-525850c22344",
+    foo: "bar"
+  }
+});
+```
+
 ### Exclusion
 
 To exclude a user from campaigns, pass the `exclude` method an object with the following properties:
