@@ -38,20 +38,20 @@ In the meantime, please <a href="mailto:Traverse Operations <operations@traverse
 
 ## Deploying our tag
 
-You can load our tag from the following URL:
+Load our tag from the following URL:
 ```
 https://static.traversedlp.com/v1/retargeting.js
+```
+
+For example:
+```html
+<script src="https://static.traversedlp.com/v1/container/traverse-container.js" type="text/javascript"></script>
 ```
 
 This instantiates a `TraverseRetargeting` singleton. You can use it to:
 
   1. [Include a user in a campaign](#inclusion).
   2. [Exclude a user from campaigns](#exclusion).
-
-For example:
-```html
-<script src="https://static.traversedlp.com/v1/container/traverse-container.js" type="text/javascript"></script>
-```
 
 ### Initialization
 
