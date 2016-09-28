@@ -73,7 +73,7 @@ TraverseRetargeting.include({
 });
 ```
 
-Use the `advertiserProperties` property to pass additional data (*optional, advanced*):
+Advanced users may use the `advertiserProperties` property to pass additional data:
 
 ```javascript
 TraverseRetargeting.include({
