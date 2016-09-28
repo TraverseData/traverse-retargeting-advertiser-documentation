@@ -75,10 +75,25 @@ TraverseRetargeting.include({
 
 ### Exclusion
 
-To exclude a user from campaigns, add them to an exclusion list:
+To exclude a user from campaigns, pass the `exclude` method an object with the following properties:
+
+| Property | Description | Required |
+| -------- | ----------- | -------- |
+| `campaignId` | Campaign ID | Yes |
+| `email` | Email address (we will hash before submitting) | No |
+| `emailMd5Lower` | MD5 hash of trimmed, lowercased email address | No |
+| `emailSha1Lower` | SHA-1 hash of trimmed, lowercased email address | No |
+
+Notes:
+
+ 1. (Hashed) email addresses are optional, but enable more-accurate exclusion.
+ 2. Users should be excluded after converting.
+
+For example:
 
 ```javascript
 TraverseRetargeting.exclude({
-  exclusionListId: "YOUR-EXCLUSION-LIST-ID-HERE"
+  campaignId: "YOUR-CAMPAIGN-ID-HERE",
+  emailMd5Lower: "ba9d46a037766855efca2730031bfc5db095c654"
 });
 ```
