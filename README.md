@@ -38,7 +38,7 @@ For example:
 <script src="https://static.traversedlp.com/v1/retargeting.js" type="text/javascript"></script>
 ```
 
-This instantiates a `TraverseRetargeting` singleton. After [initializing](#initialization), you can [include a user in a campaign](#inclusion). 
+This instantiates a `TraverseRetargeting` singleton. After [initializing](#initialization) it, you can [include a user in a campaign](#inclusion). 
 
 ### Initialization
 
