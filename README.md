@@ -8,7 +8,6 @@
   4. [Deploying our tag](#deploying-our-tag)
     1. [Initialization](#initialization)
     2. [Inclusion](#inclusion)
-    3. [Exclusion](#exclusion)
 
 ## Overview
 
@@ -18,17 +17,8 @@ Traverse Email Retargeting allows you to send email advertisements to anonymous 
 
 To get started with Traverse Email Retargeting:
 
- 1. [Create an exclusion list](#creating-a-campaign).
- 2. [Create a campaign](#creating-a-campaign).
- 3. [Deploy our tag](#deploying-our-tag).
-
-## Creating an exclusion list
-
-Exclusion lists are used to exclude users from campaigns.
-
-*Creating exclusion lists programmatically is not yet supported.*
-
-In the meantime, please <a href="mailto:Traverse Operations <operations@traversedlp.com&gt">contact us</a> and we will provide you an exclusion-list ID.
+ 1. [Create a campaign](#creating-a-campaign).
+ 2. [Deploy our tag](#deploying-our-tag).
 
 ## Creating a campaign
 
@@ -48,10 +38,7 @@ For example:
 <script src="https://static.traversedlp.com/v1/retargeting.js" type="text/javascript"></script>
 ```
 
-This instantiates a `TraverseRetargeting` singleton. You can use it to:
-
-  1. [Include a user in a campaign](#inclusion).
-  2. [Exclude a user from campaigns](#exclusion).
+This instantiates a `TraverseRetargeting` singleton. After [initializing it], you can [include a user in a campaign](#inclusion). 
 
 ### Initialization
 
