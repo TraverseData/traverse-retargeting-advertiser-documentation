@@ -42,11 +42,11 @@ This instantiates a `TraverseRetargeting` singleton. After [initializing](#initi
 
 ### Initialization
 
-Before using the `TraverseRetargeting` singleton, it must be initialized with your client ID:
+Before using the `TraverseRetargeting` singleton, it must be initialized with your advertiser ID:
 
 ```javascript
 TraverseRetargeting.init({
-  clientId: "YOUR-CLIENT-ID-HERE"
+  advertiserId: "YOUR-ADVERTISER-ID-HERE"
 });
 ```
 
