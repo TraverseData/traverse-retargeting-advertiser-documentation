@@ -6,8 +6,8 @@
   2. [Getting started](#getting-started)
   3. [Creating a campaign](#creating-a-campaign)
   4. [Campaign Inclusion](#campaign-inclusion)
-    1. [Deploying our tag](#deploying-our-tag)
-    2. [Calling our pixel](#calling-our-pixel)
+     1. [Deploying our tag](#deploying-our-tag)
+     2. [Calling our pixel](#calling-our-pixel)
 
 ## Overview
 
