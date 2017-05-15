@@ -5,9 +5,9 @@
   1. [Overview](#overview)
   2. [Getting started](#getting-started)
   3. [Creating a campaign](#creating-a-campaign)
-  4. [Deploying our tag](#deploying-our-tag)
-    1. [Initialization](#initialization)
-    2. [Inclusion](#inclusion)
+  4. [Campaign Inclusion](#campaign-inclusion)
+    1. [Deploying our tag](#deploying-our-tag)
+    2. [Calling our pixel](#calling-our-pixel)
 
 ## Overview
 
@@ -26,7 +26,19 @@ To get started with Traverse Email Retargeting:
 
 In the meantime, please <a href="mailto:Traverse Operations <operations@traversedlp.com&gt">contact us</a> and we will provide you a campaign ID.
 
-## Deploying our tag
+## Campaign Inclusion
+
+Include anonymous users in a campaign by [deploying our tag](#deploying-our-tag) or [calling our pixel](#calling-our-pixel).
+
+| Parameter    | Description | Required |
+| ------------ |------------ | -------- |
+| `advertiserId` | Your provided 36-character client ID (includes hyphens). | Yes |
+| `campaignId` | Your provided 36-character campaign ID (includes hyphens). | Yes |
+| `advertiserProperties` | A JSON object of additional properties | No |
+
+### Deploying our tag
+
+Our tag is the preferred integration method. If for some reason, you can't use this, integrate by [calling our pixel](#calling-our-pixel).
 
 Load our tag from the following URL:
 ```
@@ -40,7 +52,7 @@ For example:
 
 This instantiates a `TraverseRetargeting` singleton. After [initializing](#initialization) it, you can [include a user in a campaign](#inclusion). 
 
-### Initialization
+#### Initialization
 
 Before using the `TraverseRetargeting` singleton, it must be initialized with your advertiser ID:
 
@@ -50,7 +62,7 @@ TraverseRetargeting.init({
 });
 ```
 
-### Inclusion
+#### Inclusion
 
 To include a user in a campaign, use the `include` method:
 
@@ -70,4 +82,24 @@ TraverseRetargeting.include({
     foo: "bar"
   }
 });
+```
+
+### Calling our pixel
+
+To include a user in a campaign using our pixel, load the following pixel in the user's browser, with the parameters replaced.
+
+```
+<img border="0" width="1" height="1" src="https://api.traversedlp.com/retargeting/v1/include.gif?advertiserId={{advertiserId}}&campaignId={{campaignId}}"/\>
+```
+
+Advanced users may use the `advertiserProperties` property to pass additional data. It should be a url-encoded, serialized json object or have each property set like `advertiserProperties.foo`. If your advertiserProperties are `{foo: 'bar'}`, passing it in the url would look like one of these:
+
+Serialized, URL-Encoded JSON:
+```
+<img border="0" width="1" height="1" src="https://api.traversedlp.com/retargeting/v1/include.gif?advertiserId={{advertiserId}}&campaignId={{campaignId}}&advertiserProperties=%7B%22foo%22%3A%22bar%22%7D"/\>
+```
+
+advertiserPropertise.propertyName:
+```
+<img border="0" width="1" height="1" src="https://api.traversedlp.com/retargeting/v1/include.gif?advertiserId={{advertiserId}}&campaignId={{campaignId}}&advertiserProperties.foo=bar"/\>
 ```
