@@ -86,15 +86,15 @@ TraverseRetargeting.include({
 
 ### Calling our pixel
 
-To include a user in a campaign using our pixel, load the following pixel in the user's browser, with the parameters replaced.
+To include a user in a campaign using our pixel, load the following pixel in the user's browser, with the parameters replaced:
 
 ```
 <img border="0" width="1" height="1" src="https://api.traversedlp.com/retargeting/v1/include.gif?advertiserId={{advertiserId}}&campaignId={{campaignId}}"/\>
 ```
 
-Advanced users may use the `advertiserProperties` property to pass additional data. It should be a url-encoded, serialized json object or have each property set like `advertiserProperties.foo`. If your advertiserProperties are `{foo: 'bar'}`, passing it in the url would look like one of these:
+Advanced users may use the `advertiserProperties` property to pass additional data. It should be a URL-encoded, serialized JSON object or have each property set like `advertiserProperties.foo`. If your advertiserProperties are `{foo: 'bar'}`, passing it in the URL would look like one of these:
 
-Using Serialized, URL-Encoded JSON:
+Using serialized, URL-encoded JSON:
 ```
 <img border="0" width="1" height="1" src="https://api.traversedlp.com/retargeting/v1/include.gif?advertiserId={{advertiserId}}&campaignId={{campaignId}}&advertiserProperties=%7B%22foo%22%3A%22bar%22%7D"/\>
 ```
