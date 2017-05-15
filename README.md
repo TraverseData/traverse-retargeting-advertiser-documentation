@@ -99,7 +99,7 @@ Serialized, URL-Encoded JSON:
 <img border="0" width="1" height="1" src="https://api.traversedlp.com/retargeting/v1/include.gif?advertiserId={{advertiserId}}&campaignId={{campaignId}}&advertiserProperties=%7B%22foo%22%3A%22bar%22%7D"/\>
 ```
 
-advertiserPropertise.propertyName:
+advertiserProperties.propertyName:
 ```
 <img border="0" width="1" height="1" src="https://api.traversedlp.com/retargeting/v1/include.gif?advertiserId={{advertiserId}}&campaignId={{campaignId}}&advertiserProperties.foo=bar"/\>
 ```
