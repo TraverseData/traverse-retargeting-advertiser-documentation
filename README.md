@@ -18,7 +18,7 @@ Traverse Email Retargeting allows you to send email advertisements to anonymous 
 To get started with Traverse Email Retargeting:
 
  1. [Create a campaign](#creating-a-campaign).
- 2. [Deploy our tag](#deploying-our-tag) or [call our pixel](#calling-our-pixel)
+ 2. [Deploy our tag](#deploying-our-tag) or [call our pixel](#calling-our-pixel).
 
 ## Creating a campaign
 
