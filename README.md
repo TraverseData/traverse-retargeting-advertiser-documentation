@@ -24,7 +24,7 @@ To get started with Traverse Email Retargeting:
 
 *Creating campaigns programmatically is not yet supported.*
 
-In the meantime, please <a href="mailto:Traverse Operations <operations@traversedlp.com">contact us</a> and we will provide you a campaign ID.
+In the meantime, please <a href="mailto:Traverse Operations <operations@traversedlp.com>">contact us</a> and we will provide you a campaign ID.
 
 ## Campaign Inclusion
 
